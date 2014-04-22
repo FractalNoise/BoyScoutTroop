@@ -1,23 +1,36 @@
+/*
 body {
   background-image:url("../img/aspen_colorado.jpg");
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
 }
+*/
+body {
+  background-color:rgba(200,200,200,1);
+}
+
+#siteHeader {
+  margin-top:15px;
+}
 
 .tab-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  box-shadow:none;
 }
 
 .nav-tabs a {
   color:black;
-  background-color: rgba(100,100,100,1);
+  background-color:white;
   top:2px;
+  z-index:-50;
 }
 .nav-tabs li:hover {
   top:-2px;
+  z-index:0;
 }
 .nav-tabs .active{
   top:-2px;
+  z-index:0;
 }
