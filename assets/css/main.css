@@ -1,0 +1,11 @@
+body {
+  background-image:url("../img/aspen_colorado.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+.tab-content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
