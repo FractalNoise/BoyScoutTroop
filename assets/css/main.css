@@ -9,3 +9,15 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.nav-tabs a {
+  color:black;
+  background-color: rgba(100,100,100,1);
+  top:2px;
+}
+.nav-tabs li:hover {
+  top:-2px;
+}
+.nav-tabs .active{
+  top:-2px;
+}
