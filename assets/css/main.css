@@ -33,6 +33,13 @@ body {
   z-index:0;
 }
 
+.nav-tabs {
+  border-left-style:ridge;
+  border-left-width:2px;
+  border-left-color:lightgray;
+  padding-left:3px;
+}
+
 .label {
   box-shadow:none;
 }
