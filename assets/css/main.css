@@ -7,8 +7,26 @@ body {
 }
 */
 
+body {
+  background-image:url(../img/site-background.jpg);
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
 * {
   border-radius:0 !important;
+}
+
+#siteHeader {
+  background-image:url(../img/header-background.jpg);
+  background-size:cover;
+  background-position:center center;
+  color:white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border-style:solid;
+  border-width:5px;
+  border-color:rgba(0,0,0,1);
 }
 
 .nav-tabs > li > a {
@@ -29,14 +47,11 @@ body {
 }
 
 .nav-tabs > li:hover {
-  top:-4px;
+  top:-3px;
   z-index:0;
 }
 
 .nav-tabs {
-  border-left-style:ridge;
-  border-left-width:2px;
-  border-left-color:lightgray;
   padding-left:3px;
 }
 
@@ -71,6 +86,6 @@ body {
 }
 
 .nav-tabs .active{
-  top:-4px;
+  top:-3px;
   z-index:0;
 }
