@@ -16,12 +16,12 @@
     <!-- Bootstrap js plugins ~Matthew -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- JS for my fancy modal image viewing :D -->
-    <script src="assets/js/fancy-images.js"></script>
+    <script src="assets/js/InitPopovers.js"></script>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="jumbotron" id="siteHeader">
+          <div class="well" id="siteHeader">
             <h1>Pine Creek Boy Scouts</h1>
             <p>Pine Creek Cub Scout, Boy Scout, Varsity Team, and Venture Crew Website</p>
           </div>
@@ -54,6 +54,21 @@
                 <li><strong>Bear:</strong> 8</li>
                 <li><strong>Webelos:</strong> 11</li>
               </ul>
+              <p>Current Troop numbers: </p>
+              <ul>
+                <li><strong>11 year olds:</strong> 10</li>
+                <li><strong>12-13 year olds:</strong> 12</li>
+                <li><strong>Varsity Team Numbers:</strong> 12</li>
+                <li><strong>Venture Crew  Numbers:</strong> 7</li>
+              </ul>
+              <br>
+              <br>
+              <p>Important Links:</p>
+              <div class="btn-group-vertical">
+                <a class="btn btn-default" href="http://www.pikespeakbsa.org/" target="_blank">Pikes Peak Council</a>
+                <a class="btn btn-default" href="https://www.lds.org/" target="_blank">Latter-Day Saints</a>
+                <a class="btn btn-default disabled" href="#" target="_self">Calendar of Events</a>
+              </div>
             </div>
             <!-- Programs -->
             <div class="tab-pane" id="ProgramsPane">
@@ -68,8 +83,8 @@
                   <p><strong>Cub Master:</strong> Christy Turner</p>
                   <p><strong>Meet:</strong> Wednesday <span class="label label-success">6pm-7pm</span></p>
                   <p><strong>Wolf Den Leaders <span class="label label-default">8 yrs. old</span>:</strong> To be Announced in January</p>
-                  <p><strong>Bear Den leaders <span class="label label-default">9 yrs. old</span>:</strong> Julie Platt, Tiffannee Boss, and Kristie Barkdull</p>
-                  <p><strong>Webelos Den Leaders <span class="label label-default">10 yrs. old</span>:</strong> Tyler Nelson</p>
+                  <p><strong>Bear Den leaders <span class="label label-default">9 yrs. old</span>:</strong> <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Julie Platt<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Julie Platt</a>, <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Tiffannee Boss<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Tiffannee Boss</a>, and <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Kristie Barkdull<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Kristie Barkdull</a></p>
+                  <p><strong>Webelos Den Leaders <span class="label label-default">10 yrs. old</span>:</strong> <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Tyler Nelson<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Tyler Nelson</a></p>
                   <p><strong>Meeting Location:</strong> 8710 Lexington Dr., Colorado Springs, CO 80920</p>
                 </div>
               </div>
@@ -79,8 +94,8 @@
                 </div>
                 <div class="panel-body">
                   <p><strong>Meet:</strong> Wednesday <span class="label label-success">7pm-8pm</span></p>
-                  <p><strong>Scout Leaders <span class="label label-default">11 yrs. old</span>:</strong> Dave Barkdull and Tyler Boss</p>
-                  <p><strong>Scout Leaders <span class="label label-default">12-13 yrs. old</span>:</strong> Jeff Platt and Bryan Rasmussen</p>
+                  <p><strong>Scout Leaders <span class="label label-default">11 yrs. old</span>:</strong> <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Dave Barkdull<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Dave Barkdull</a> and <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Tyler Boss<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Tyler Boss</a></p>
+                  <p><strong>Scout Leaders <span class="label label-default">12-13 yrs. old</span>:</strong> <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Jeff Platt<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Jeff Platt</a> and <a class="hasPop" data-original-title="Contact Info" data-container="body" data-toggle="popover" data-placement="top" data-content="Name: Bryan Rasmussen<br>Email: <a href=&quot;mailto:example@example.com&quot; target=&quot;_top&quot;>example@example.com</a><br>Phone: (555)555-5555">Bryan Rasmussen</a></p>
                   <p><strong>Meeting Location:</strong> 8710 Lexington Dr., Colorado Springs, CO 80920</p>
                 </div>
               </div>
@@ -130,6 +145,10 @@
                   <p>
                     <strong>Boy Scout Highlights of 2013:</strong> Summer camp at Camp Dobbins, every boy in scout camp advanced at least one rank. A combined total of 150 merit badges were earned.
                   </p>
+                  <div class="list-group img-list">
+                    <a class="list-group-item img-link" href="assets/img/colorado_snow.jpg" target="_blank"><img class="img-thumbnail left" src="assets/img/colorado_snow.jpg" alt="" />Link To Awesome Image 1</a>
+                    <a class="list-group-item img-link" href="assets/img/aspen_colorado.jpg" target="_blank"><img class="img-thumbnail left" src="assets/img/aspen_colorado.jpg" alt="" />Link To Awesome Image 2</a>
+                  </div>
                   <p>
                     <strong>Venture Crew Highlights of 2013:</strong>
                   </p>
